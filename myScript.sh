@@ -3,7 +3,8 @@
 
 zcat /da?_data/basemaps/gz/b2fFullU*.s | fgrep .fbx | head -n 10 | tee fbx_blobs_10.txt #Search the data file and find all the files with .fbx ending select the top 10 and store them in 'fbx_blobs_10.txt'
 cat fbx_blobs_10.txt |cut -d \; -f 1 | ~/lookup/getValues b2P | tee fbx_projects_10.txt #Go through the fbx_blobs_10.txt and use the first field which is the blobs to search for project names and store then in "fbx_projects_10.txt"
-cat fbx_projects_10.txt | cut  -d";" -f2- >> fbx_project_10_single.txt #Go through the list of "blob;ProjectsNames" structure and extract the project names
+cat fbx_projects_10.txt | cut  -d";" -f2- >> fbx_project_10_fork.txt #Go through the list of "blob;ProjectsNames" structure and extract the project names that is in a deforked group
+cat fbx_project_10_fork.txt | cut -d ';' -f 1 >> fbx_project_10_single.txt #Select the original project name and keep the original
 sort -u fbx_project_10_single.txt -o fbx_project_10_single_no_dup.txt #Make sure there is no duplicat in the project names
 
 
