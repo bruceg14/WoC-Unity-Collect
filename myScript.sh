@@ -18,3 +18,6 @@ grep -v "\.asset\.meta$" asset_blobs_new.txt > filtered_blobs.txt #Get rif of th
 cat filtered_blobs.txt |cut -d \; -f 1 | ~/lookup/getValues b2P >> asset_projects.txt #Look up project name in a deforked fashion. Output format will be blob;Original Project name; All projects that forked original
 cut -d ";" -f 2 asset_projects.txt > asset_project_only.txt #Only take the second field which is original project
 sort -u asset_project_only.txt -o asset_project_only_no_dup.txt # Make sure there is no duplicate project
+grep '^bitbucket' asset_project_only_no_dup.txt > bitbucket.csv
+grep -v '^bitbucket' asset_project_only_no_dup.txt >github_projects.csv
+
