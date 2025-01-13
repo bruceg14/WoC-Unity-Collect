@@ -1,11 +1,6 @@
 
 #Ignore large data storage files
-asset_blobs_new.txt
 
-filtered_blobs.txt
+archive/
+filter_method/blobs/
 
-asset_projects.txt
-
-asset_project_only.txt
-
-my_database.db
