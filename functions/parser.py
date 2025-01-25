@@ -2,7 +2,7 @@ import yaml
 import json
 
 #Enter filename
-yaml_content = "Assets/example_asset.asset"
+yaml_content = "../filter_method/projects/cloned_github/AJCTuto-VisualScripting/Assets/Graphs/StopElementOnGameOver.asset"
 
 with open(yaml_content, 'r') as file:
     raw_content = file.read()
