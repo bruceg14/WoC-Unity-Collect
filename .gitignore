@@ -2,5 +2,9 @@
 #Ignore large data storage files
 
 archive/
-filter_method/blobs/
-
+filter_method/sorted_blobs/
+filter_method/directory_filter.sh
+filter_method/filter_blobs.sh
+filter_method/processed_blobs/
+new_asset_blobs.txt
+new_asset_blobs_no_dup.txt

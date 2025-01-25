@@ -1,23 +1,47 @@
 #!/bin/bash
-# echo 'Script to get the first 10 Unity file with .fbx extension from World of Code with their project name as output'
 
-# Attemp to store the value of blob to File name into a SQlite database in da4
-# Takes too long to complete
+#New script
+zcat /da?_data/basemaps/gz/b2fFullU*.s | fgrep .asset | awk '/\.asset$/ {print}' > new_asset_blobs.txt
 
-# zcat /da?_data/basemaps/gz/b2fFullU*.s | fgrep .fbx | while IFS=";" read -r blob filename; do
-#     safe_filename=$(echo "$filename" | sed "s/'/''/g")
-#     sqlite3 /home/zguo20/WoC-Unity-Collect/my_database.db <<EOF
-#     INSERT INTO fbx_blob_fname (blob_id, filename) VALUES ('$blob', '$safe_filename');
-# EOF
-# done
+#Call organize_blobs.sh
+INPUT="new_asset_blobs.txt"
+OUTPUT_FILE="new_asset_blobs_no_dup.txt"
+OUTPUT_DIR="filter_method/sorted_blobs"
+
+mkdir -p "$OUTPUT_DIR"
+
+sort -t ';' -k1,1 -u $INPUT -o $OUTPUT_FILE
+split -n l/35 -d -a 2 $OUTPUT_FILE $OUTPUT_DIR/sorted_blobs_part_
+
+#Filter blobs and store them in processed_blobs/processed_blobs/ directory
+cd filter_method/
+
+INPUT_DIR_1="sorted_blobs"
+OUTPUT_DIR_1="processed_blobs"
+
+mkdir -p "$OUTPUT_DIR_1"
+
+for input_file in "$INPUT_DIR_1"/*; do
+    base_name=$(basename "$input_file")
+
+    output_file="$OUTPUT_DIR_1/${base_name%.txt}_filtered.txt"
+
+    > "$output_file"
+    echo "Processing file: $input_file"
+
+    while IFS=';' read -r blob_id file_name; do
+        if ~/lookup/showCnt blob <<< "$blob_id" | grep -Fq "VisualScripting"; then
+            echo "    Found 'VisualScripting' in $file_name"
+            echo "$blob_id;$file_name" >> "$output_file"
+        fi
+    done < "$input_file"
+
+    echo "Results saved to: $output_file"
+done
+
+echo "All files processed. Results are in the '$OUTPUT_DIR_1' directory."
 
 
-#Change the search to ".asset" files
-zcat /da?_data/basemaps/gz/b2fFullU*.s | grep -iE "Assets/.+\.asset" >> asset_blobs_new.txt # Search all the asset files that is in the format of containing .asset in a directory that is named Asset
-grep -v "\.asset\.meta$" asset_blobs_new.txt > filtered_blobs.txt #Get rif of the files containning .meta
-cat filtered_blobs.txt |cut -d \; -f 1 | ~/lookup/getValues b2P >> asset_projects.txt #Look up project name in a deforked fashion. Output format will be blob;Original Project name; All projects that forked original
-cut -d ";" -f 2 asset_projects.txt > asset_project_only.txt #Only take the second field which is original project
-sort -u asset_project_only.txt -o asset_project_only_no_dup.txt # Make sure there is no duplicate project
-grep '^bitbucket' asset_project_only_no_dup.txt | sed 's/_/\//g' > bitbucket.csv
-grep -v '^bitbucket' asset_project_only_no_dup.txt |sed 's/^/github.com\//; s/_/\//g'  > github_projects.csv
+
+
 

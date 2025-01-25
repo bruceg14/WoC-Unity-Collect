@@ -1,6 +1,6 @@
 #!/bin/bash
 
-INPUT_DIR="blobs"
+INPUT_DIR="sorted_blobs"
 
 OUTPUT_DIR="processed_blobs"
 
