@@ -1,15 +1,14 @@
 # WoC-Unity-Collect
 
-## How To Use
-To make the code excutable, run this command:
-
+## Location of extracted files(Unity Visual Script)
 ```bash
-chomad +x myScript.sh
+cd filter_method/processed_blobs/downloaded_files/extracted_files/
 ```
 
-## 1/2 
-Discovered that the previous approach created various projects without the desireable ".asset" files. 
-To make sure the projects are Unity project, should adapt to a new apporach to first find all the Unity projects then filter out those that didn't use the graph script ".asset" files.
+## Todo
+1. Update download github content to download the bare version of github repo and keep them
+2. Random sample the script graph and check first 40 to validate the parser
+
 
 
 
