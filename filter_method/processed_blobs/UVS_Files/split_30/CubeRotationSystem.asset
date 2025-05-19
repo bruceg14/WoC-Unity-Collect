@@ -1,0 +1,488 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a8c6a6630b8450e9da0c1de53f00e05, type: 3}
+  m_Name: CubeRotationSystem
+  m_EditorClassIdentifier: 
+  m_GraphModel:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: VSGraphModel, ns: UnityEditor.VisualScripting.Model, asm: Unity.GraphTools.Foundation.Editor}
+      data:
+        m_State: 0
+        m_AssetModel: {fileID: 11400000}
+        m_GraphNodeModels:
+        - id: 1
+        - id: 2
+        - id: 3
+        - id: 4
+        - id: 5
+        - id: 6
+        - id: 7
+        m_EdgeModels:
+        - m_GraphAssetModel: {fileID: 11400000}
+          m_InputPortReference:
+            NodeModelGuid:
+              m_Value0: 5221870776741142167
+              m_Value1: 17458480111368142486
+            GraphAssetModel: {fileID: 11400000}
+            UniqueId: 
+          m_OutputPortReference:
+            NodeModelGuid:
+              m_Value0: 4613017991679571993
+              m_Value1: 2315441912628659589
+            GraphAssetModel: {fileID: 11400000}
+            UniqueId: MainPortName
+        - m_GraphAssetModel: {fileID: 11400000}
+          m_InputPortReference:
+            NodeModelGuid:
+              m_Value0: 5268360166413941502
+              m_Value1: 7126014829922083484
+            GraphAssetModel: {fileID: 11400000}
+            UniqueId: 
+          m_OutputPortReference:
+            NodeModelGuid:
+              m_Value0: 5237603039814896754
+              m_Value1: 6973201491766373763
+            GraphAssetModel: {fileID: 11400000}
+            UniqueId: MainPortName
+        - m_GraphAssetModel: {fileID: 11400000}
+          m_InputPortReference:
+            NodeModelGuid:
+              m_Value0: 5025075448836672116
+              m_Value1: 13049870643268727941
+            GraphAssetModel: {fileID: 11400000}
+            UniqueId: a
+          m_OutputPortReference:
+            NodeModelGuid:
+              m_Value0: 4648665740720966864
+              m_Value1: 9818032716922360464
+            GraphAssetModel: {fileID: 11400000}
+            UniqueId: 
+        - m_GraphAssetModel: {fileID: 11400000}
+          m_InputPortReference:
+            NodeModelGuid:
+              m_Value0: 5025075448836672116
+              m_Value1: 13049870643268727941
+            GraphAssetModel: {fileID: 11400000}
+            UniqueId: b
+          m_OutputPortReference:
+            NodeModelGuid:
+              m_Value0: 5268360166413941502
+              m_Value1: 7126014829922083484
+            GraphAssetModel: {fileID: 11400000}
+            UniqueId: speed
+        - m_GraphAssetModel: {fileID: 11400000}
+          m_InputPortReference:
+            NodeModelGuid:
+              m_Value0: 5657976241194602223
+              m_Value1: 3000003819030608001
+            GraphAssetModel: {fileID: 11400000}
+            UniqueId: Angle
+          m_OutputPortReference:
+            NodeModelGuid:
+              m_Value0: 5025075448836672116
+              m_Value1: 13049870643268727941
+            GraphAssetModel: {fileID: 11400000}
+            UniqueId: result
+        - m_GraphAssetModel: {fileID: 11400000}
+          m_InputPortReference:
+            NodeModelGuid:
+              m_Value0: 4928472049900009906
+              m_Value1: 7537439837364501658
+            GraphAssetModel: {fileID: 11400000}
+            UniqueId: 
+          m_OutputPortReference:
+            NodeModelGuid:
+              m_Value0: 5221870776741142167
+              m_Value1: 17458480111368142486
+            GraphAssetModel: {fileID: 11400000}
+            UniqueId: 
+        m_StickyNoteModels: []
+        m_Stencil:
+          id: 8
+        name: CubeRotationSystem
+        m_GraphVariableModels:
+        - id: 9
+    00000001:
+      type: {class: VariableNodeModel, ns: UnityEditor.VisualScripting.Model, asm: Unity.GraphTools.Foundation.Editor}
+      data:
+        m_GuidAsString: 918fb803c6bb4004585484cd62a12202
+        m_GraphAssetModel: {fileID: 11400000}
+        m_Position: {x: -209, y: -81}
+        m_Color: {r: 0.776, g: 0.443, b: 0, a: 0.5}
+        m_HasUserColor: 0
+        m_Title: Cube Query
+        m_InputConstantKeys: []
+        m_InputConstantsValues: []
+        m_State: 0
+        m_DeclarationModel:
+          id: 9
+    00000002:
+      type: {class: OnUpdateEntitiesNodeModel, ns: UnityEditor.VisualScripting.Model.Stencils,
+        asm: Unity.VisualScripting.Ecs.Editor}
+      data:
+        m_GuidAsString: 79e16a60ecfc778469ef15c892bf842f
+        m_GraphAssetModel: {fileID: 11400000}
+        m_Position: {x: -47, y: -90}
+        m_Color: {r: 0.776, g: 0.443, b: 0, a: 0.5}
+        m_HasUserColor: 0
+        m_Title: update
+        m_InputConstantKeys: []
+        m_InputConstantsValues: []
+        m_State: 0
+        m_StackedNodeModels:
+        - id: 10
+        m_FunctionVariableModels: []
+        m_FunctionParameterModels:
+        - id: 11
+        - id: 12
+        - id: 13
+        - id: 14
+        m_ReturnType:
+          Identification: System.Void, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        m_EnableProfiling: 0
+        m_EventType:
+          Identification: 
+        m_Order: 0
+        m_CriteriaModels: []
+    00000003:
+      type: {class: VariableNodeModel, ns: UnityEditor.VisualScripting.Model, asm: Unity.GraphTools.Foundation.Editor}
+      data:
+        m_GuidAsString: 27c4ca6f634bfa8438d65f7afc9c5c06
+        m_GraphAssetModel: {fileID: 11400000}
+        m_Position: {x: -455, y: 179}
+        m_Color: {r: 0.776, g: 0.443, b: 0, a: 0.5}
+        m_HasUserColor: 0
+        m_Title: Cube Rotation Component
+        m_InputConstantKeys: []
+        m_InputConstantsValues: []
+        m_State: 0
+        m_DeclarationModel:
+          id: 13
+    00000004:
+      type: {class: GetPropertyGroupNodeModel, ns: UnityEditor.VisualScripting.Model,
+        asm: Unity.GraphTools.Foundation.Editor}
+      data:
+        m_GuidAsString: efabbeb88a9fc194c92eba98bb0b4e26
+        m_GraphAssetModel: {fileID: 11400000}
+        m_Position: {x: -230, y: 170}
+        m_Color: {r: 0.776, g: 0.443, b: 0, a: 0.5}
+        m_HasUserColor: 0
+        m_Title: Get Property
+        m_InputConstantKeys: []
+        m_InputConstantsValues: []
+        m_State: 0
+        m_Members:
+        - Path:
+          - speed
+          Type:
+            Identification: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+              PublicKeyToken=b77a5c561934e089
+    00000005:
+      type: {class: FunctionCallNodeModel, ns: UnityEditor.VisualScripting.Model,
+        asm: Unity.GraphTools.Foundation.Editor}
+      data:
+        m_GuidAsString: 47a42792f77acb54584b4d875347a15b
+        m_GraphAssetModel: {fileID: 11400000}
+        m_Position: {x: -276, y: 32}
+        m_Color: {r: 0.776, g: 0.443, b: 0, a: 0.5}
+        m_HasUserColor: 0
+        m_Title: mul
+        m_InputConstantKeys:
+        - a
+        - b
+        m_InputConstantsValues:
+        - id: 15
+        - id: 16
+        m_State: 0
+        m_DeclaringType:
+          Identification: Unity.Mathematics.math, Unity.Mathematics, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        m_MethodInfoString: mul
+        m_TypeArguments: []
+        m_IsStatic: 1
+        m_OverloadHashCode: 1274202488
+    00000006:
+      type: {class: SystemConstantNodeModel, ns: UnityEditor.VisualScripting.Model,
+        asm: Unity.GraphTools.Foundation.Editor}
+      data:
+        m_GuidAsString: 0dc833b8cd0638040921255ecb8a0488
+        m_GraphAssetModel: {fileID: 11400000}
+        m_Position: {x: -449, y: 57}
+        m_Color: {r: 0.776, g: 0.443, b: 0, a: 0.5}
+        m_HasUserColor: 0
+        m_Title: Time > deltaTime
+        m_InputConstantKeys: []
+        m_InputConstantsValues: []
+        m_State: 0
+        m_ReturnType:
+          Identification: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        m_DeclaringType:
+          Identification: UnityEngine.Time, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        m_Identifier: deltaTime
+    00000007:
+      type: {class: StackModel, ns: UnityEditor.VisualScripting.GraphViewModel, asm: Unity.GraphTools.Foundation.Editor}
+      data:
+        m_GuidAsString: 2b93bbb973375644a9c3df5d89d5a986
+        m_GraphAssetModel: {fileID: 11400000}
+        m_Position: {x: 131.85002, y: 177.1}
+        m_Color: {r: 0.776, g: 0.443, b: 0, a: 0.5}
+        m_HasUserColor: 0
+        m_Title: 
+        m_InputConstantKeys: []
+        m_InputConstantsValues: []
+        m_State: 0
+        m_StackedNodeModels:
+        - id: 17
+    00000008:
+      type: {class: EcsStencil, ns: UnityEditor.VisualScripting.Model.Stencils, asm: Unity.VisualScripting.Ecs.Editor}
+      data:
+        addCreateAssetMenuAttribute: 0
+        fileName: 
+        menuName: 
+        UseJobSystem: 0
+        UpdateAfter: []
+        UpdateBefore: []
+    00000009:
+      type: {class: ComponentQueryDeclarationModel, ns: UnityEditor.VisualScripting.Model.Stencils,
+        asm: Unity.VisualScripting.Ecs.Editor}
+      data:
+        m_Name: Cube Query
+        m_DataType:
+          Identification: Unity.Entities.EntityQuery, Unity.Entities, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        m_VariableType: 3
+        m_IsExposed: 1
+        m_Tooltip: 
+        m_InitializationModel:
+          id: 18
+        m_Modifiers: 1
+        variableFlags: 0
+        m_AssetModel: {fileID: 11400000}
+        m_Id: a5c60c60-6266-4b75-ae38-36fc4ae5c494
+        m_QueryContainer:
+          Groups: []
+          Components:
+          - Component:
+              TypeHandle:
+                Identification: Unity.Transforms.Rotation, Unity.Transforms, Version=0.0.0.0,
+                  Culture=neutral, PublicKeyToken=null
+              Subtract: 0
+              IsShared: 0
+          - Component:
+              TypeHandle:
+                Identification: CubeRotationComponent, Assembly-CSharp, Version=0.0.0.0,
+                  Culture=neutral, PublicKeyToken=null
+              Subtract: 0
+              IsShared: 0
+          - Component:
+              TypeHandle:
+                Identification: Unity.Transforms.Translation, Unity.Transforms, Version=0.0.0.0,
+                  Culture=neutral, PublicKeyToken=null
+              Subtract: 0
+              IsShared: 0
+          RootGroup:
+            Name: <empty>
+            GroupCount: 0
+            ComponentCount: 3
+        m_CriteriaModels: []
+    0000000A:
+      type: {class: SetRotationNodeModel, ns: UnityEditor.VisualScripting.Model.Stencils,
+        asm: Unity.VisualScripting.Ecs.Editor}
+      data:
+        m_GuidAsString: fee01040a6b258e41887226249722a92
+        m_GraphAssetModel: {fileID: 11400000}
+        m_Position: {x: 0, y: 0}
+        m_Color: {r: 0.776, g: 0.443, b: 0, a: 0.5}
+        m_HasUserColor: 0
+        m_Title: Rotate
+        m_InputConstantKeys:
+        - Angle
+        - Axis
+        m_InputConstantsValues:
+        - id: 19
+        - id: 20
+        m_State: 0
+        Mode: 0
+        Add: 1
+    0000000B:
+      type: {class: LoopVariableDeclarationModel, ns: UnityEditor.VisualScripting.Model,
+        asm: Unity.GraphTools.Foundation.Editor}
+      data:
+        m_Name: Cube QueryEntity
+        m_DataType:
+          Identification: Unity.Entities.Entity, Unity.Entities, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        m_VariableType: 2
+        m_IsExposed: 0
+        m_Tooltip: 
+        m_InitializationModel:
+          id: 18
+        m_Modifiers: 0
+        variableFlags: 1
+        m_AssetModel: {fileID: 11400000}
+        m_Id: d759f524-5973-4be8-a2c5-1479c2863e75
+        m_TitleComponentIcon: 5
+    0000000C:
+      type: {class: LoopVariableDeclarationModel, ns: UnityEditor.VisualScripting.Model,
+        asm: Unity.GraphTools.Foundation.Editor}
+      data:
+        m_Name: Rotation
+        m_DataType:
+          Identification: Unity.Transforms.Rotation, Unity.Transforms, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        m_VariableType: 2
+        m_IsExposed: 0
+        m_Tooltip: 
+        m_InitializationModel:
+          id: 18
+        m_Modifiers: 0
+        variableFlags: 1
+        m_AssetModel: {fileID: 11400000}
+        m_Id: bc2b5b47-e182-4828-b004-ef5f54b457b7
+        m_TitleComponentIcon: 5
+    0000000D:
+      type: {class: LoopVariableDeclarationModel, ns: UnityEditor.VisualScripting.Model,
+        asm: Unity.GraphTools.Foundation.Editor}
+      data:
+        m_Name: CubeRotationComponent
+        m_DataType:
+          Identification: CubeRotationComponent, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        m_VariableType: 2
+        m_IsExposed: 0
+        m_Tooltip: 
+        m_InitializationModel:
+          id: 18
+        m_Modifiers: 0
+        variableFlags: 1
+        m_AssetModel: {fileID: 11400000}
+        m_Id: 7199f53d-030c-44d8-b58d-0d31820a6f3a
+        m_TitleComponentIcon: 5
+    0000000E:
+      type: {class: LoopVariableDeclarationModel, ns: UnityEditor.VisualScripting.Model,
+        asm: Unity.GraphTools.Foundation.Editor}
+      data:
+        m_Name: Translation
+        m_DataType:
+          Identification: Unity.Transforms.Translation, Unity.Transforms, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        m_VariableType: 2
+        m_IsExposed: 0
+        m_Tooltip: 
+        m_InitializationModel:
+          id: 18
+        m_Modifiers: 0
+        variableFlags: 1
+        m_AssetModel: {fileID: 11400000}
+        m_Id: ec33bc90-1880-473a-ae3d-616227feb0bd
+        m_TitleComponentIcon: 5
+    0000000F:
+      type: {class: FloatConstantModel, ns: UnityEditor.VisualScripting.Model, asm: Unity.GraphTools.Foundation.Editor}
+      data:
+        m_GuidAsString: 5a6f330190d680341b36ff285d3235ef
+        m_GraphAssetModel: {fileID: 11400000}
+        m_Position: {x: 0, y: 0}
+        m_Color: {r: 0.776, g: 0.443, b: 0, a: 0.5}
+        m_HasUserColor: 0
+        m_Title: A
+        m_InputConstantKeys: []
+        m_InputConstantsValues: []
+        m_State: 0
+        m_IsLocked: 0
+        value: 0
+    00000010:
+      type: {class: FloatConstantModel, ns: UnityEditor.VisualScripting.Model, asm: Unity.GraphTools.Foundation.Editor}
+      data:
+        m_GuidAsString: f5d5ab504be96a64b9b9c221ee11326e
+        m_GraphAssetModel: {fileID: 11400000}
+        m_Position: {x: 0, y: 0}
+        m_Color: {r: 0.776, g: 0.443, b: 0, a: 0.5}
+        m_HasUserColor: 0
+        m_Title: B
+        m_InputConstantKeys: []
+        m_InputConstantsValues: []
+        m_State: 0
+        m_IsLocked: 0
+        value: 0
+    00000011:
+      type: {class: SetPositionNodeModel, ns: UnityEditor.VisualScripting.Model.Stencils,
+        asm: Unity.VisualScripting.Ecs.Editor}
+      data:
+        m_GuidAsString: a9fbe3fa42edace4e9d9891dca63bd5d
+        m_GraphAssetModel: {fileID: 11400000}
+        m_Position: {x: 0, y: 0}
+        m_Color: {r: 0.776, g: 0.443, b: 0, a: 0.5}
+        m_HasUserColor: 0
+        m_Title: Translate
+        m_InputConstantKeys:
+        - Value
+        m_InputConstantsValues:
+        - id: 21
+        m_State: 0
+        Mode: 0
+        Add: 0
+    00000012:
+      type: {class: , ns: , asm: }
+    00000013:
+      type: {class: FloatConstantModel, ns: UnityEditor.VisualScripting.Model, asm: Unity.GraphTools.Foundation.Editor}
+      data:
+        m_GuidAsString: 2a5fddcecad0d29468db139d4d7daccd
+        m_GraphAssetModel: {fileID: 11400000}
+        m_Position: {x: 0, y: 0}
+        m_Color: {r: 0.776, g: 0.443, b: 0, a: 0.5}
+        m_HasUserColor: 0
+        m_Title: Angle
+        m_InputConstantKeys: []
+        m_InputConstantsValues: []
+        m_State: 0
+        m_IsLocked: 0
+        value: 0.5
+    00000014:
+      type: {class: Float3ConstantModel, ns: UnityEditor.VisualScripting.Model, asm: Unity.VisualScripting.Ecs.Editor}
+      data:
+        m_GuidAsString: e94bea954806b47448fca03b721b733a
+        m_GraphAssetModel: {fileID: 11400000}
+        m_Position: {x: 0, y: 0}
+        m_Color: {r: 0.776, g: 0.443, b: 0, a: 0.5}
+        m_HasUserColor: 0
+        m_Title: Axis
+        m_InputConstantKeys: []
+        m_InputConstantsValues: []
+        m_State: 0
+        m_IsLocked: 0
+        value:
+          x: 0
+          y: 1
+          z: 0
+    00000015:
+      type: {class: Float3ConstantModel, ns: UnityEditor.VisualScripting.Model, asm: Unity.VisualScripting.Ecs.Editor}
+      data:
+        m_GuidAsString: 04bb5301d7eb236478cf965184f82adf
+        m_GraphAssetModel: {fileID: 11400000}
+        m_Position: {x: 0, y: 0}
+        m_Color: {r: 0.776, g: 0.443, b: 0, a: 0.5}
+        m_HasUserColor: 0
+        m_Title: Value
+        m_InputConstantKeys: []
+        m_InputConstantsValues: []
+        m_State: 0
+        m_IsLocked: 0
+        value:
+          x: 0
+          y: 0
+          z: 0

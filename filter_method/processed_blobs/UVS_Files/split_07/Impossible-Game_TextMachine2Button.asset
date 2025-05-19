@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: TextMachine2Button
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":327.4156,"y":31.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-92.0,"y":-101.0},"guid":"852c6353-19e7-4a64-af60-3297b10eb1ef","$version":"A","$type":"Unity.VisualScripting.Start","$id":"9"},{"defaultValues":{},"position":{"x":12.0,"y":23.0},"guid":"0e5b7f76-727e-46ab-88ca-b93e4df4af2d","$version":"A","$type":"Unity.VisualScripting.This","$id":"11"},{"kind":"Application","defaultValues":{"name":{"$content":"ButtonUIText","$type":"System.String"}},"position":{"x":229.0,"y":-47.0},"guid":"49add4cc-070f-48d5-bd04-bbb60eda3adf","$version":"A","$type":"Unity.VisualScripting.SetVariable","$id":"13"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"13"},"destinationKey":"assign","guid":"242e1463-8828-47c0-b606-b8fef6171fff","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"11"},"sourceKey":"self","destinationUnit":{"$ref":"13"},"destinationKey":"input","guid":"8bd73f67-0e87-44aa-8574-fcc1aba5a60f","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

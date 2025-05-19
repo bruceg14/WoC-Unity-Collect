@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: playerInitialJump
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":175.1779,"y":-87.2894},"zoom":1.0,"elements":[{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"Y
+      Value Toilet Jump","$type":"System.String"},"object":null},"position":{"x":21.0,"y":142.0},"guid":"a0729129-0cbe-460c-a711-1bb5ccca25bb","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"9"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"X
+      Value ToiletJump","$type":"System.String"},"object":null},"position":{"x":5.0,"y":31.0},"guid":"1e13d3f4-a055-4c40-b3d1-e1ee5eb50b01","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"11"},{"chainable":false,"member":{"name":"AddForce","parameterTypes":["System.Single","System.Single","System.Single","UnityEngine.ForceMode"],"targetType":"UnityEngine.Rigidbody","targetTypeName":"UnityEngine.Rigidbody","$version":"A"},"defaultValues":{"target":null,"%x":{"$content":10.0,"$type":"System.Single"},"%y":{"$content":10.0,"$type":"System.Single"},"%z":{"$content":0.0,"$type":"System.Single"},"%mode":{"$content":"Impulse","$type":"UnityEngine.ForceMode"}},"position":{"x":352.0,"y":-55.0},"guid":"0e4f8a0b-aac9-4b4e-a69e-2cd9f8bef3f4","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"13"},{"coroutine":false,"defaultValues":{"key":{"$content":"Space","$type":"UnityEngine.KeyCode"},"action":{"$content":"Down","$type":"Unity.VisualScripting.PressState"}},"position":{"x":239.0,"y":-273.0},"guid":"50366f79-bd80-43ed-9444-34d1e238a392","$version":"A","$type":"Unity.VisualScripting.OnKeyboardInput"},{"defaultValues":{},"position":{"x":196.0,"y":-93.0},"guid":"f143da7b-3a4e-4c2f-bf5e-3ccc5a6e88c8","$version":"A","$type":"Unity.VisualScripting.Once","$id":"18"},{"coroutine":false,"defaultValues":{"button":{"$content":"Left","$type":"Unity.VisualScripting.MouseButton"},"action":{"$content":"Down","$type":"Unity.VisualScripting.PressState"}},"position":{"x":8.0,"y":-115.0},"guid":"8f1954c1-3e1d-46f4-a6b7-a60e31296872","$version":"A","$type":"Unity.VisualScripting.OnMouseInput","$id":"20"},{"sourceUnit":{"$ref":"18"},"sourceKey":"once","destinationUnit":{"$ref":"13"},"destinationKey":"enter","guid":"21de4b64-e1bf-4492-b70a-f537ae687458","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"trigger","destinationUnit":{"$ref":"18"},"destinationKey":"enter","guid":"ccea97cb-f379-4ecb-8537-016977bd14de","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"11"},"sourceKey":"value","destinationUnit":{"$ref":"13"},"destinationKey":"%x","guid":"04e441f4-c670-4a28-ac46-49b261ef11ed","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"9"},"sourceKey":"value","destinationUnit":{"$ref":"13"},"destinationKey":"%y","guid":"d43f003f-d447-4ee1-8523-e370ec186afe","$type":"Unity.VisualScripting.ValueConnection"},{"position":{"xMin":-34.87094,"yMin":-171.1935,"xMax":495.0,"yMax":286.0645},"label":"First
+      this","comment":null,"color":{"r":0.0,"g":0.0,"b":0.0,"a":1.0},"guid":"bb3ba899-102e-4cd5-af76-d48e9d8c3bce","$version":"A","$type":"Unity.VisualScripting.GraphGroup"}],"$version":"A"}}'
+    _objectReferences: []

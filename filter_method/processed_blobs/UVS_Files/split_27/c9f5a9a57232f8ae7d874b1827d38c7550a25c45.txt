@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89305aa391d1c5141bbe1628d930a2c5, type: 3}
+  m_Name: Tutorial_Container_Default
+  m_EditorClassIdentifier: 
+  Modified:
+    m_PersistentCalls:
+      m_Calls: []
+  BackgroundImage: {fileID: 0}
+  Title:
+    m_Untranslated: Jam Tutorials
+  Subtitle:
+    m_Untranslated: Quick guides to help you get started
+  Description:
+    m_Untranslated: 
+  ProjectLayout: {fileID: 0}
+  Sections:
+  - OrderInView: 0
+    Heading:
+      m_Untranslated: Visual Scripting
+    Text:
+      m_Untranslated: How to get started with visual scripting
+    Metadata: 
+    Url: https://github.com/GingerLoaf/GMTKJam2021/blob/main/GMTKJam2021-Unity/Assets/Source/Documentation/VisualScripting.md
+    Image: {fileID: 2800000, guid: be2799432dd1e4145915fb45e2416494, type: 3}
+    Tutorial: {fileID: 0}
+  - OrderInView: 2
+    Heading:
+      m_Untranslated: Fog of War
+    Text:
+      m_Untranslated: Details about the Fog of War Feature
+    Metadata: 
+    Url: https://github.com/GingerLoaf/GMTKJam2021/blob/main/GMTKJam2021-Unity/Assets/Source/Documentation/FogOfWar.md
+    Image: {fileID: 2800000, guid: 02d2e74740848c94abae6c129f140633, type: 3}
+    Tutorial: {fileID: 0}

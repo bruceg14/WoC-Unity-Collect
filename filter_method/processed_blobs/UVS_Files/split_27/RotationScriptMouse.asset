@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: RotationScriptMouse
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[{"name":"MousePosition","value":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"$version":"A"}],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"Mouse
+      aim","summary":null,"pan":{"x":729.1667,"y":-752.0},"zoom":1.0,"elements":[{"chainable":false,"member":{"name":"MovePosition","parameterTypes":["UnityEngine.Vector2"],"targetType":"UnityEngine.Rigidbody2D","targetTypeName":"UnityEngine.Rigidbody2D","$version":"A"},"defaultValues":{"target":null,"%position":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"}},"position":{"x":742.0,"y":-1002.0},"guid":"1163d5f2-f190-4343-ae3a-579648bbc1da","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"10"},{"coroutine":false,"defaultValues":{},"position":{"x":472.0,"y":-1035.0},"guid":"96e05151-d029-4b10-98af-82991a311008","$version":"A","$type":"Unity.VisualScripting.FixedUpdate","$id":"13"},{"nest":{"source":"Macro","macro":0,"embed":null},"defaultValues":{},"position":{"x":443.0,"y":-800.0},"guid":"534fdc1a-b622-47f9-b9bc-3af2b1df8a64","$version":"A","$type":"Unity.VisualScripting.SuperUnit"},{"sourceUnit":{"$ref":"13"},"sourceKey":"trigger","destinationUnit":{"$ref":"10"},"destinationKey":"enter","guid":"f4379fab-1d29-4a48-b01c-a8cab9e2ff8a","$type":"Unity.VisualScripting.ControlConnection"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 450d71702734bc04899b52d014cfc69d, type: 2}

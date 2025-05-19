@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: SpawnUIScreenUnit
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":null,"_type":"UnityEngine.GameObject","key":"prefab","label":"Prefab","summary":"The
+      prefab to instanciate","hideLabel":false}],"valueOutputDefinitions":[],"title":"SpawnUIScreen","summary":null,"pan":{"x":-186.5989,"y":-2.0},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-554.0,"y":60.0},"guid":"3a3f0e6d-6549-4490-ae00-4d85fdbd7d5b","$version":"A","$type":"Unity.VisualScripting.GraphInput","$id":"10"},{"defaultValues":{},"position":{"x":105.0,"y":-30.0},"guid":"2b8558f9-e3c7-47e0-ba6c-31c83aebe0fd","$version":"A","$type":"Unity.VisualScripting.GraphOutput"},{"coroutine":false,"defaultValues":{},"position":{"x":-617.0,"y":-231.0},"guid":"d1ab69f7-617e-402e-a9d7-019e5106efd7","$version":"A","$type":"Unity.VisualScripting.OnEnterState","$id":"14"},{"coroutine":false,"defaultValues":{},"position":{"x":-607.0,"y":-137.0},"guid":"eb9cade4-0ce5-4468-94b9-b85ab70a9b51","$version":"A","$type":"Unity.VisualScripting.OnExitState","$id":"16"},{"coroutine":false,"defaultValues":{},"position":{"x":-589.0,"y":-32.0},"guid":"9e4b4d12-bcb1-4e90-a02c-e10f999fb86a","$version":"A","$type":"Unity.VisualScripting.OnDestroy","$id":"18"},{"defaultValues":{},"position":{"x":-258.0,"y":-226.0},"guid":"f759f647-298f-4580-9789-2ed5ca062493","$version":"A","$type":"SpawnUIScreenUnit","$id":"20"},{"sourceUnit":{"$ref":"14"},"sourceKey":"trigger","destinationUnit":{"$ref":"20"},"destinationKey":"enter","guid":"86ab760a-87f5-4040-9ec7-2b8747488475","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"trigger","destinationUnit":{"$ref":"20"},"destinationKey":"exit","guid":"93c574f9-6c68-4b78-8f69-9f17c2e14473","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"trigger","destinationUnit":{"$ref":"20"},"destinationKey":"destroy","guid":"3be56ab5-f747-4328-9965-78b43215f3a2","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"10"},"sourceKey":"prefab","destinationUnit":{"$ref":"20"},"destinationKey":"prefab","guid":"ce6d9870-8117-4747-a593-fb44753396b5","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

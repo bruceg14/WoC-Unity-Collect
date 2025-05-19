@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: Timer
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":74.33532,"y":-135.1806},"zoom":1.0,"elements":[{"specifyFallback":false,"kind":"Scene","defaultValues":{"name":{"$content":"Timer","$type":"System.String"}},"position":{"x":-442.0,"y":-61.0},"guid":"0dc58889-5dc3-4fcc-96ed-ebd67b6eb1ba","$version":"A","$type":"Unity.VisualScripting.GetVariable"},{"coroutine":false,"defaultValues":{},"position":{"x":-371.0,"y":-179.0},"guid":"da3860ef-a352-4a6c-b774-07f1183f2fc8","$version":"A","$type":"Unity.VisualScripting.Start","$id":"11"},{"chainable":false,"member":{"name":".ctor","parameterTypes":[],"targetType":"UnityEngine.Time","targetTypeName":"UnityEngine.Time","$version":"A"},"defaultValues":{},"position":{"x":-207.0,"y":-127.0},"guid":"ba647883-4537-4ab5-b5c2-aa0addfbedf3","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"13"},{"sourceUnit":{"$ref":"11"},"sourceKey":"trigger","destinationUnit":{"$ref":"13"},"destinationKey":"enter","guid":"8111a548-9f61-4a80-a7c6-288a5e889432","$type":"Unity.VisualScripting.ControlConnection"}],"$version":"A"}}'
+    _objectReferences: []

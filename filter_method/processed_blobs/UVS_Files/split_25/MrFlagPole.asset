@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: MrFlagPole
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"FlagPole","summary":null,"pan":{"x":-14.34474,"y":4.135803},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-461.0,"y":-131.0},"guid":"11a4a4d4-c4a1-4806-bd34-81de72e381b1","$version":"A","$type":"Unity.VisualScripting.Start"},{"coroutine":false,"defaultValues":{},"position":{"x":-465.0,"y":-13.0},"guid":"e01c17d8-02a2-4eae-a001-38ff5600994c","$version":"A","$type":"Unity.VisualScripting.Update"},{"coroutine":true,"defaultValues":{"target":null},"position":{"x":-231.0,"y":-14.0},"guid":"9c30c8f3-476e-42fb-b556-d227e4dd4d32","$version":"A","$type":"Unity.VisualScripting.OnTriggerEnter","$id":"13"},{"chainable":false,"member":{"name":"Log","parameterTypes":["System.Object"],"targetType":"UnityEngine.Debug","targetTypeName":"UnityEngine.Debug","$version":"A"},"defaultValues":{},"position":{"x":16.0,"y":-77.0},"guid":"ed92c93c-5002-4fff-b9fd-e584122abf19","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"15"},{"type":"System.String","value":{"$content":"You
+      Win","$type":"System.String"},"defaultValues":{},"position":{"x":11.0,"y":73.0},"guid":"c05396dc-599c-4b72-a5f6-3c51013af5a3","$version":"A","$type":"Unity.VisualScripting.Literal","$id":"18"},{"sourceUnit":{"$ref":"13"},"sourceKey":"trigger","destinationUnit":{"$ref":"15"},"destinationKey":"enter","guid":"573b376e-a6b8-4943-bbc6-7e80ec8a6eb6","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"output","destinationUnit":{"$ref":"15"},"destinationKey":"%message","guid":"53be040c-29d2-4d03-ad81-bf5b817ab20c","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: Play One Shot
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"In","label":null,"summary":null,"hideLabel":true}],"controlOutputDefinitions":[{"key":"Out","label":null,"summary":null,"hideLabel":true}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":null,"_type":"UnityEngine.AudioClip","key":"Audio
+      Clip","label":null,"summary":null,"hideLabel":false}],"valueOutputDefinitions":[],"title":"Play
+      One Shot","summary":null,"pan":{"x":4.5,"y":-88.0},"zoom":1.0,"elements":[{"argumentCount":1,"defaultValues":{"name":{"$content":"Play
+      One Shot","$type":"System.String"},"target":null},"position":{"x":46.0,"y":-154.0},"guid":"a3d6e4cd-b85c-4ade-a2c6-7a6b750840a6","$version":"A","$type":"Unity.VisualScripting.TriggerCustomEvent","$id":"12"},{"specifyFallback":false,"kind":"Scene","defaultValues":{"name":{"$content":"Audio
+      Manager","$type":"System.String"}},"position":{"x":-185.0,"y":-182.0},"guid":"0348d7bf-805a-4b25-879d-8fceae7870ac","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"14"},{"defaultValues":{},"position":{"x":254.0,"y":-135.0},"guid":"c127301a-c8f6-428b-9a5c-8a2b3622224a","$version":"A","$type":"Unity.VisualScripting.GraphOutput","$id":"16"},{"defaultValues":{},"position":{"x":-339.0,"y":-136.0},"guid":"129051e5-365b-4471-9e77-40a321c493e7","$version":"A","$type":"Unity.VisualScripting.GraphInput","$id":"18"},{"sourceUnit":{"$ref":"12"},"sourceKey":"exit","destinationUnit":{"$ref":"16"},"destinationKey":"Out","guid":"9aef12cd-d33c-4d3c-828b-5d06f671deb2","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"In","destinationUnit":{"$ref":"12"},"destinationKey":"enter","guid":"5a00b0cf-212d-41f3-8d30-b56935cc58ba","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"value","destinationUnit":{"$ref":"12"},"destinationKey":"target","guid":"8bf41b7d-300e-4cc6-ba7d-d72b35fa7af1","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"Audio
+      Clip","destinationUnit":{"$ref":"12"},"destinationKey":"argument_0","guid":"5037ebb4-10a4-4123-81c0-31b06b351325","$type":"Unity.VisualScripting.ValueConnection"},{"position":{"xMin":-385.0,"yMin":-245.0,"xMax":394.0,"yMax":52.0},"label":"Play
+      One Shot Audio Clip","comment":null,"color":{"r":0.0,"g":0.0,"b":0.0,"a":1.0},"guid":"63c45ab7-7c23-4bdd-9d44-b894fa90be81","$version":"A","$type":"Unity.VisualScripting.GraphGroup"}],"$version":"A"}}'
+    _objectReferences: []

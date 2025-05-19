@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: DeathCounterUI
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"Death
+      Counter","summary":null,"pan":{"x":374.0015,"y":105.5003},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-80.0,"y":-122.0},"guid":"14b2237b-c422-447c-8a9f-9d3148e23537","$version":"A","$type":"Unity.VisualScripting.Start","$id":"9"},{"coroutine":false,"defaultValues":{},"position":{"x":-290.0,"y":-199.0},"guid":"1ce4756d-4bdb-4ef6-bc55-add3e686cca5","$version":"A","$type":"Unity.VisualScripting.Update"},{"chainable":false,"member":{"name":"text","parameterTypes":null,"targetType":"UnityEngine.UI.Text","targetTypeName":"UnityEngine.UI.Text","$version":"A"},"defaultValues":{"target":null,"input":{"$content":"","$type":"System.String"}},"position":{"x":-290.0,"y":-235.0},"guid":"fcb78fcc-50c5-41df-85e0-192c7f12befd","$version":"A","$type":"Unity.VisualScripting.SetMember"},{"inputCount":2,"defaultValues":{},"position":{"x":40.0,"y":93.0},"guid":"9a352a5b-fc61-42a0-95e2-3a33e921c1eb","$version":"A","$type":"Unity.VisualScripting.GenericSum","$id":"16"},{"specifyFallback":false,"kind":"Application","defaultValues":{"name":{"$content":"Death","$type":"System.String"}},"position":{"x":-272.0,"y":-23.0},"guid":"d1f4d01b-d8f6-4541-8054-bf8b6b261f3c","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"18"},{"type":"System.Int32","value":{"$content":1,"$type":"System.Int32"},"defaultValues":{},"position":{"x":-221.0,"y":108.0},"guid":"416288c6-ccd1-4f7d-afdd-3a6041d419b7","$version":"A","$type":"Unity.VisualScripting.Literal","$id":"20"},{"kind":"Application","defaultValues":{"name":{"$content":"Death","$type":"System.String"}},"position":{"x":218.0,"y":31.0},"guid":"0a751baa-8e12-4ef8-b164-eadf2ba2a8c4","$version":"A","$type":"Unity.VisualScripting.SetVariable","$id":"22"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"22"},"destinationKey":"assign","guid":"62f69aba-5ab7-4d7a-ad11-0276ffbd9922","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"value","destinationUnit":{"$ref":"16"},"destinationKey":"0","guid":"02fa7dde-bfb4-4ff4-a725-a7168bfe0426","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"output","destinationUnit":{"$ref":"16"},"destinationKey":"1","guid":"290d5181-a254-454d-b5f0-5c76169915ed","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"sum","destinationUnit":{"$ref":"22"},"destinationKey":"input","guid":"59eacaf4-62c3-44dc-9deb-daf87e23debd","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

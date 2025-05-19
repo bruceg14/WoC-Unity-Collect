@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: OnSteep
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"in","label":null,"summary":null,"hideLabel":true}],"controlOutputDefinitions":[{"key":"out","label":null,"summary":null,"hideLabel":true}],"valueInputDefinitions":[{"hasDefaultValue":false,"defaultValue":{"$content":0,"$type":"System.Int32"},"_type":"System.Int32","key":"Count","label":null,"summary":null,"hideLabel":false}],"valueOutputDefinitions":[{"_type":"System.Boolean","key":"ff","label":null,"summary":null,"hideLabel":true}],"title":null,"summary":null,"pan":{"x":-35.0,"y":42.0},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-284.0,"y":-149.0},"guid":"8465f10e-4ea1-4fdf-900c-87c1d2e58619","$version":"A","$type":"Unity.VisualScripting.GraphInput","$id":"13"},{"defaultValues":{},"position":{"x":227.0,"y":-151.0},"guid":"c3604af6-04f2-4c4f-9356-9bff1cf100fb","$version":"A","$type":"Unity.VisualScripting.GraphOutput","$id":"15"},{"numeric":true,"defaultValues":{"b":{"$content":0.0,"$type":"System.Single"}},"position":{"x":-52.0,"y":-49.0},"guid":"b713d0aa-c40c-4345-a6e8-86fb9569f0b0","$version":"A","$type":"Unity.VisualScripting.Greater","$id":"17"},{"sourceUnit":{"$ref":"13"},"sourceKey":"in","destinationUnit":{"$ref":"15"},"destinationKey":"out","guid":"2129127b-5f6e-4258-b1a6-7f93822dd872","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"Count","destinationUnit":{"$ref":"17"},"destinationKey":"a","guid":"09397320-8926-447f-8731-f2c1aed0307e","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"comparison","destinationUnit":{"$ref":"15"},"destinationKey":"ff","guid":"d7792f7b-f0f1-4772-9a20-bd8684acb327","$type":"Unity.VisualScripting.ValueConnection"},{"position":{"xMin":-504.0,"yMin":-417.0,"xMax":-388.0,"yMax":-281.0},"label":"Note
+      to self, refacture this with variable so its easier to use","comment":null,"color":{"r":0.0,"g":0.0,"b":0.0,"a":1.0},"guid":"19362986-466a-4ebb-be04-e1bd7f5cd76c","$version":"A","$type":"Unity.VisualScripting.GraphGroup"}],"$version":"A"}}'
+    _objectReferences: []

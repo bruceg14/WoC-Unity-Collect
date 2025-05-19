@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 530e556d4407947dcae7102ff497587d, type: 3}
+  m_Name: PlayerState
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"title":"Player State","summary":null,"pan":{"x":91.15332,"y":58.34641},"zoom":1.0,"elements":[{"nest":{"source":"Macro","macro":0,"embed":null},"isStart":true,"position":{"x":-139.0,"y":-54.0},"width":170.0,"guid":"220042d5-de41-40af-9f7a-a6d527232692","$version":"A","$type":"Unity.VisualScripting.FlowState","$id":"3"},{"nest":{"source":"Macro","macro":1,"embed":null},"isStart":false,"position":{"x":269.0,"y":-24.0},"width":170.0,"guid":"d66ed06a-aea6-4d35-bea0-075025cd4c2f","$version":"A","$type":"Unity.VisualScripting.FlowState","$id":"5"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-61.0,"y":-4.0},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":100.0,"y":-50.0},"guid":"33036458-acd9-484b-b81a-af87d6441ad3","$version":"A","$type":"Unity.VisualScripting.TriggerStateTransition","$id":"17"},{"argumentCount":0,"coroutine":false,"defaultValues":{"target":null,"name":{"$content":"Dead","$type":"System.String"}},"position":{"x":-215.0,"y":-56.0},"guid":"b15804ed-8a2b-48bb-a269-98e4b5c2d225","$version":"A","$type":"Unity.VisualScripting.CustomEvent","$id":"19"},{"sourceUnit":{"$ref":"19"},"sourceKey":"trigger","destinationUnit":{"$ref":"17"},"destinationKey":"trigger","guid":"e8a7e906-bc25-4a05-8170-1e529bec73aa","$type":"Unity.VisualScripting.ControlConnection"}],"$version":"A"}},"source":{"$ref":"3"},"destination":{"$ref":"5"},"guid":"939c9cb9-d2d4-4b11-8328-02c38f891191","$version":"A","$type":"Unity.VisualScripting.FlowStateTransition"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: fd22fa96d57d5a04c90ef1a818c20bcb, type: 2}
+    - {fileID: 11400000, guid: 009ba855f4f32e742b9c0ec86e806ea4, type: 2}

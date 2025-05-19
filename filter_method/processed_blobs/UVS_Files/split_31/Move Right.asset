@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: Move Right
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"Move
+      right","summary":"makes the player move right","pan":{"x":140.0,"y":39.67268},"zoom":1.0,"elements":[{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"Movement
+      speed","$type":"System.String"},"object":null},"position":{"x":-200.0,"y":19.0},"guid":"6063e68e-9652-4b46-befa-623fbc7aa4d5","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"9"},{"coroutine":false,"defaultValues":{},"position":{"x":-91.0,"y":-96.0},"guid":"ed449d7f-a2c2-471c-9945-2adc859e32d7","$version":"A","$type":"Unity.VisualScripting.FixedUpdate","$id":"11"},{"chainable":false,"member":{"name":"velocity","parameterTypes":null,"targetType":"UnityEngine.Rigidbody","targetTypeName":"UnityEngine.Rigidbody","$version":"A"},"defaultValues":{"target":null,"input":{"x":3.2,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":185.0,"y":-170.0},"guid":"28020b85-ea62-4ede-af3d-12b02f13fa3b","$version":"A","$type":"Unity.VisualScripting.SetMember","$id":"13"},{"member":{"name":"right","parameterTypes":null,"targetType":"UnityEngine.Vector3","targetTypeName":"UnityEngine.Vector3","$version":"A"},"defaultValues":{},"position":{"x":-171.0,"y":162.0},"guid":"2d090517-d136-44b2-b8e5-c3f5c524eb3a","$version":"A","$type":"Unity.VisualScripting.GetMember","$id":"16"},{"defaultValues":{},"position":{"x":6.0,"y":28.0},"guid":"3d3a78bf-8595-4b0a-b976-1f4fd56c3a6b","$version":"A","$type":"Unity.VisualScripting.GenericMultiply","$id":"19"},{"sourceUnit":{"$ref":"11"},"sourceKey":"trigger","destinationUnit":{"$ref":"13"},"destinationKey":"assign","guid":"8f4b5001-855b-49a3-950a-e0e1f5e2e06c","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"value","destinationUnit":{"$ref":"19"},"destinationKey":"b","guid":"0f49684f-d609-42a7-85a0-9ba83d31b1a5","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"9"},"sourceKey":"value","destinationUnit":{"$ref":"19"},"destinationKey":"a","guid":"1545e1d4-dde0-43a9-b821-56e978f120ff","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"product","destinationUnit":{"$ref":"13"},"destinationKey":"input","guid":"46679ba7-b9f8-4bdb-a9f6-9352abb4db69","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
